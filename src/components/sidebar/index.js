@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../styles/Sidebar.css'
+
 import NewFile from './NewFile'
 import SidebarItem from './SidebarItem';
 
@@ -14,8 +15,8 @@ import StorageIcon from '@material-ui/icons/Storage';
 const index = () => {
     return (
         <div className='sidebar'>
-            {/*new file*/}
-            <NewFile/>
+            <NewFile />
+
             <div className="sidebar__itemsContainer">
                 <SidebarItem arrow icon={(<InsertDriveFileIcon />)} label={'My Drive'} />
                 <SidebarItem arrow icon={(<ImportantDevicesIcon />)} label={'Computers'} />
@@ -25,10 +26,11 @@ const index = () => {
                 <SidebarItem icon={(<DeleteOutlineIcon />)} label={'Bin'} />
                 
                 <hr/>
+                
                 <SidebarItem icon={(<StorageIcon />)} label={'Storage'} />
 
             </div>
-            
+
         </div>
     )
 }

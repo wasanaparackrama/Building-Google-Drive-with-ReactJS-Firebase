@@ -6,7 +6,7 @@ import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 const SidebarItem = ({ arrow, icon, label }) => {
     return (
         <div className='sidebarItem'>
-           <div className="sidebarItem__arrow">
+            <div className="sidebarItem__arrow">
                 {arrow && (<ArrowRightIcon />)}
             </div>
             

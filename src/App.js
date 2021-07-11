@@ -3,7 +3,7 @@ import './App.css';
 import  Header from './components/header'
 import Sidebar from './components/sidebar'
 import FilesView from './components/filesView/FilesView'
-//import SideIcons from './components/sideIcons'
+import SideIcons from './components/sideIcons'
 
 function App() {
   // const [user, setUser] = useState()
@@ -19,8 +19,12 @@ function App() {
   return (
     <div className="App">
       <Header userPhoto={user.photoURL} />
-      <Sidebar />
-      <FilesView />
+      
+      <div className="app__main">
+              <Sidebar />
+              <FilesView />
+             <SideIcons />
+            </div>
      
     </div>
   );

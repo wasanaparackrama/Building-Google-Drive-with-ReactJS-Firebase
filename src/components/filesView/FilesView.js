@@ -24,7 +24,7 @@ const FilesView = () => {
         <div className='fileView'>
             <div className="fileView__row">
                 {
-                    files.slice(0, 5).map(({ id, item }) => (
+                    files.slice(0, 10).map(({ id, item }) => (
                         <FileCard name={item.caption} />
                     ))
 

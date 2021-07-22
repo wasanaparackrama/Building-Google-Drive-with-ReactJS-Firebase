@@ -44,7 +44,7 @@ const NewFile = () => {
     const handleClose = () => {
         setOpen(false);
     };
-
+    ////to make sure file is selected
     const handleChange = (e) => {
         if (e.target.files[0]) {
             setFile(e.target.files[0])
